@@ -1,6 +1,6 @@
 <head>
     
-<link rel="stylesheet" href="public/css/header.css">
+<link rel="stylesheet" href="{{ URL::asset('public/css/header.css') }}">
   <!--FOUC hamburger menu-->
   	<style type="text/css">
   		.menu {display:none;}
@@ -11,7 +11,7 @@
 <header>
 	
 	<div class="topMenu">
-		<a href="/"><img class="desktopLogo" src="public/img/logo-desktop.png"></img></a>
+		<a href="/"><img class="desktopLogo" src="{{ URL::secure('public/img/logo-desktop.png') }}"></img></a>
 		
 		<div class="linkNav">
 			<a href="#">LOGOUT</a>
@@ -34,7 +34,7 @@
 		  </ul>
 		</div>
 	
-	<script type="text/javascript" src="public/js/header.js"></script>
+	<script type="text/javascript" src="{{ URL::asset('public/js/header.js') }}"></script>
 	
 </header>
 
