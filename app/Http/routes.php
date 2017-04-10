@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('template');
+    return view('pages.gallery');
+});
+
+Route::get('gallery', function () {
+    return view('pages.gallery');
+});
+
+Route::get('panels', function () {
+    return view('pages.panels');
 });

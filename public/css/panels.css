@@ -1,0 +1,50 @@
+body {
+    height: 100%;
+    background-color: #f4f5f7;
+}
+
+.bodyContent {
+    text-align: center;
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius:15px;
+    border: 2px solid #dadadd;
+    background-color: #fff;
+}
+
+.logoCircle {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 83px;
+    right: 48%;
+    border: 2px solid #dadadd;
+    z-index: 10;
+}
+
+.logoCircle img {
+    margin-top: 7px;
+    margin-left: 2px;
+    
+}
+
+.allText {
+    padding: 15%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    font-size: 2.5em;
+    letter-spacing: -2px;
+    margin-top: 0;
+}
+
+.text {
+    line-height: 150%;
+    font-weight: bold;
+    color: #4f4e4c;
+}
