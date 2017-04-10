@@ -1,6 +1,6 @@
 <head>
     @include("partials.head")
-    <link rel="stylesheet" href="public/css/gallery.css">
+    <link rel="stylesheet" href="{{ URL::asset('css/gallery.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 </head>
