@@ -11,6 +11,7 @@
 
 <body>
     <div class ="containerAllImages">
+        <div class="open-lightbox"></div>
     </div>
     
     <script type="text/javascript" src="{{ URL::asset('js/gallery.js') }}"></script>

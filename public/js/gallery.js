@@ -1,22 +1,18 @@
-function getAPI() {
-   let xhr = $.get("https://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC&limit=12");
+let xhr = $.get("https://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6zaTOxFJmzC&limit=12");
    xhr.done(function(giphy) {
-     for (var i = 0; i < giphy.data.length; i++) {
+     for (var i = 0; i < 12; i++) {
        var eachImage = (giphy.data[i].images.original.url);
-       $('.containerAllImages').prepend("<a href="  + eachImage + " class='open-lightbox'><img src=" + eachImage + " class='responsive-image'></a>");
-     }
+       $('.open-lightbox').prepend("<a href="  + eachImage + "><img src=" + eachImage + " class='responsive-image'></a>");
+     } 
    });
- }
- getAPI();
- 
+
  (function($) {
-  
+  var image = $(this).attr('href');
   // Open Lightbox
-  $('.open-lightbox a.link').on('click', function(e) {
+  $('.open-lightbox').on('click', function(e) {
     e.preventDefault();
-    var image = $(this).attr('href');
     $('html').addClass('no-scroll');
-    $('.open-lightbox').append('<div class="lightbox-opened"><img src="' + image + '"></div>');
+    $('.open-lightbox').append('<div class="lightbox-opened"><img src="http://placekitten.com/g/200/300"></div>');
   });
   
   // Close Lightbox
@@ -26,4 +22,5 @@ function getAPI() {
   });
   
 })(jQuery);
+
  
