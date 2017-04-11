@@ -33,19 +33,19 @@ body {
     
 }
 
-.allText {
+
+.myTitle {
+    font-size: 2.5em;
+    letter-spacing: -2px;
+    margin-top: 0;
     padding: 15%;
     font-family: 'Montserrat', sans-serif;
 }
 
-.title {
-    font-size: 2.5em;
-    letter-spacing: -2px;
-    margin-top: 0;
-}
-
-.text {
+.myText {
     line-height: 150%;
     font-weight: bold;
     color: #4f4e4c;
+    padding: 15%;
+    font-family: 'Montserrat', sans-serif;
 }

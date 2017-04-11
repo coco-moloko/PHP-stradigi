@@ -26,6 +26,13 @@ body {
   display: block;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+}
+
 @media (min-width: 751px)  {
     .containerAllImages {
      width: 81%;  

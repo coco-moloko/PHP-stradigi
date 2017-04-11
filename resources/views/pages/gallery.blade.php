@@ -15,5 +15,6 @@
     </div>
     
     <script type="text/javascript" src="{{ URL::asset('js/gallery.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('lazyload.min.js') }}"></script>
 </body>
 </html>
