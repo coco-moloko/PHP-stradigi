@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
     @include("partials.head")
     <link rel="stylesheet" href="{{ URL::asset('css/gallery.css') }}">
@@ -9,13 +11,8 @@
 
 <body>
     <div class ="containerAllImages">
-            <a href="https://placehold.it/800x800" class="open-lightbox"><img src="https://placehold.it/800x800" class="responsive-image"></a>
-            <a href="https://placehold.it/800x800" class="open-lightbox"><img src="https://placehold.it/800x800" class="responsive-image"></a>
-            <a href="https://placehold.it/800x800" class="open-lightbox"><img src="https://placehold.it/800x800" class="responsive-image"></a>
-            <a href="https://placehold.it/800x800" class="open-lightbox"><img src="https://placehold.it/800x800" class="responsive-image"></a>
-            <a href="https://placehold.it/800x800" class="open-lightbox"><img src="https://placehold.it/800x800" class="responsive-image"></a>
-            <a href="https://placehold.it/800x800" class="open-lightbox"><img src="https://placehold.it/800x800" class="responsive-image"></a>
     </div>
     
-    <script type="text/javascript" src="public/js/gallery.js"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/gallery.js') }}"></script>
 </body>
+</html>

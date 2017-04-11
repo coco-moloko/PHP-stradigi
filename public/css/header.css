@@ -70,7 +70,7 @@ header {
     .hamburger {
         position:absolute;
         top: 13px;
-        right: 3%;
+        right: 9%;
         line-height: 45px;
         padding: 5px 15px 0px 15px;
         color: #000;
@@ -86,7 +86,7 @@ header {
         background:none;
         position:absolute;
         top: 13px;
-        right: 3.5%;
+        right: 10%;
         padding:7px 15px 0px 15px;
         color:#000;
         border:0;
@@ -104,7 +104,7 @@ header {
         background:#f1f1f1;  
         position:absolute; 
         text-align:center; 
-        right: 3%;
+        right: 10%;
         font-family: 'Montserrat', sans-serif;
     }
     .menu ul {
