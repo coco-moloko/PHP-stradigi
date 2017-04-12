@@ -12,7 +12,7 @@ let xhr = $.get("https://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6
   $('.open-lightbox').on('click', function(e) {
     e.preventDefault();
     $('html').addClass('no-scroll');
-    $('.open-lightbox').append('<img src="#"></div>').addClass('lightbox-opened</div>');
+    $('.open-lightbox').append('<img src="#">').addClass('lightbox-opened');
   });
   
   // Close Lightbox
