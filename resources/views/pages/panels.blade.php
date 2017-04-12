@@ -10,8 +10,7 @@
 <body>
     <div class="bodyContent">
             <div class="logoCircle"><img src="{{ URL::asset('img/img-kraken.png') }}"></img></div>
-                <h1 class="myTitle"></h1>
-                <p class="myText"></p>
+            <div class="insideText"></div>
     </div>
     
     
