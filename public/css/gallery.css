@@ -54,6 +54,8 @@ body {
     .lightbox-opened img{
         margin-top: 20% !important;
         margin-left: -7%;
+        min-height: 200px;
+        min-width: 200px;
     }
     
     .lightbox-opened:before {
@@ -108,3 +110,4 @@ body {
 .no-scroll {
   overflow: hidden;
 }
+
