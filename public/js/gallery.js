@@ -2,23 +2,37 @@ let xhr = $.get("https://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=dc6
    xhr.done(function(giphy) {
      for (var i = 0; i < 12; i++) {
        var eachImage = (giphy.data[i].images.original.url);
-       $('.open-lightbox').prepend("<a href="  + eachImage + "><img src=" + eachImage + " class='responsive-image'></a>");
+       $('.open-lightbox').prepend("<img src=" + eachImage + " class='responsive-image' onclick='openLightBox(this)'>");
      } 
    });
+   
+    //$('.responsive-image').on('click', function(e) {
+        function openLightBox(e){
+   
+    var imgSrc =$(e).attr('src');
+    $('html').addClass('no-scroll');
+    $('.open-lightbox').html('<img src="' + imgSrc + '">').addClass('lightbox-opened');
+        }
+  //});
+  
+  $('.open-lightbox').on('click', '.lightbox-opened', function() {
+    $('html').removeClass('no-scroll');
+    $('.open-lightbox').removeClass('lightbox-opened');
+  });
 
  (function($) {
-  var image = $(this).attr('href');
+  //var image = $(this).attr('href');
   // Open Lightbox
-  $('.open-lightbox').on('click', function(e) {
-    e.preventDefault();
-    $('html').addClass('no-scroll');
-    $('.open-lightbox').append('<img src="#">').addClass('lightbox-opened');
-  });
+ 
   
   // Close Lightbox
-    $('.open-lightbox').on('click', '.lightbox-opened', function() {
+    $('.open-lightbox').on('click', '.open-lightbox', function() {
     $('html').removeClass('no-scroll');
-    $('.lightbox-opened').remove();
+    $('.open-lightbox').removeClass('lightbox-opened');
   });
   
 })(jQuery);
+
+//Can you please take to cross button html?
+//its made all in CSS
+//ok
