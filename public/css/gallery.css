@@ -17,6 +17,7 @@ body {
     border-radius: 14px;
     margin-top: 4px;
     margin-left: 1%;
+    cursor: pointer;
 }
 
 .responsive-image img {
@@ -25,13 +26,6 @@ body {
   margin: auto;
   display: block;
 }
-
-/*img {*/
-/*    display: block;*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*    min-height: 300px;*/
-/*}*/
 
 @media (min-width: 751px)  {
     .containerAllImages {
@@ -60,7 +54,7 @@ body {
     
     .lightbox-opened:before {
         margin-top: 18.5% !important;
-        margin-left: -6.5%;
+        margin-left: -6.5% !important;
     }
 }
 
@@ -91,7 +85,8 @@ body {
     position: absolute;
     padding: 11px 14px;
     text-transform: uppercase;
-    margin-top: 13%;
+    margin-top: 12.5%;
+    margin-left: .5%;
 }
   
 .lightbox-opened img {

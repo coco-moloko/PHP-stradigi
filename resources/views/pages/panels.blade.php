@@ -8,8 +8,8 @@
 @include("partials.header")
 
 <body>
-    <div class="bodyContent">
-            <div class="logoCircle"><img src="{{ URL::asset('img/img-kraken.png') }}"></img></div>
+    <div class="">
+            <!--<div class="logoCircle"><img src="{{ URL::asset('img/img-kraken.png') }}" class="logoCircle"/></img></div>-->
             <div class="insideText"></div>
     </div>
     
